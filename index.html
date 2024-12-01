@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMO VOCE ESTRUPICIO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        .heart {
+            font-size: 100px;
+            color: #ff6347;
+        }
+        .jokes {
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>voce é literalmente minha pessoa favorita, be...</h1>
+        <div class="heart">❤️</div>
+        <p>...and eu vou estar aqui do seu lado empre que puder, independente doq aconteça eu sempre te verei como uma boboca q eu lovo muito(sum eu boiolei e quis fazer isso do nada)</p>
+        <div class="jokes">
+            <p>Quer ouvir uma piada?</p>
+            <button onclick="tellJoke()">ALERTA DE HUMOR DUVIDOSO</button>
+            <p id="joke"></p>
+        </div>
+    </div>
+    <script>
+        const jokes = [
+            "O que o pato disse para a pata? Vem quá!",
+            "Por que o livro de matemática se suicidou? Estava cheio de problemas.",
+            "Por que a vaca foi para o espaço? Para ver a Via Láctea!"
+        ];
+
+        function tellJoke() {
+            const randomIndex = Math.floor(Math.random() * jokes.length);
+            document.getElementById('joke').innerText = jokes[randomIndex];
+        }
+    </script>
+</body>
+</html>
